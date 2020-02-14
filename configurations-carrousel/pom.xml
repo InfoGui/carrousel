@@ -9,27 +9,6 @@
 	<packaging>jar</packaging>
 	<description>Configuration du carrousel</description>
 	
-    <repositories>
-      <repository>
-        <id>dev</id>
-        <name>dev</name>
-        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
-      </repository>
-    </repositories>
-	
-	<distributionManagement>
-      <repository>
-        <id>dev</id>
-        <name>dev</name>
-        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
-      </repository>
-	  <snapshotRepository>
-        <id>dev</id>
-        <name>dev</name>
-        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
-      </snapshotRepository>
-    </distributionManagement>
-	
 	<build>
 		<plugins>
 		  <plugin>

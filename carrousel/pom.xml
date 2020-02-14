@@ -17,33 +17,6 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-	
-    <repositories>
-     	<repository>
-	        <id>dev</id>
-	        <name>dev</name>
-	        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
-        </repository>
-
-		<repository>
-			<id>felix-thirdparty</id>
-			<name>Projet Felix ThirdParty</name>
-			<url>http://192.168.14.183:8090/nexus/content/repositories/thirdparty/</url>
-		</repository>
-    </repositories>
-	
-	<distributionManagement>
-      <repository>
-        <id>dev</id>
-        <name>dev</name>
-        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
-      </repository>
-      <snapshotRepository>
-        <id>dev</id>
-        <name>dev</name>
-        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
-      </snapshotRepository>
-    </distributionManagement>
 
 	<dependencies>
 		<dependency>
