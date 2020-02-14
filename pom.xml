@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.edf.felix</groupId>
+	<artifactId>projet-carrousel</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>carrousel</name>
+	<packaging>pom</packaging>
+	<description>Carrousel du projet FELIX</description>
+
+	<modules>
+		<module>configurations-carrousel</module>
+		<module>carrousel</module>
+		<module>pack-carrousel</module>
+	</modules>
+	
+	<distributionManagement>
+	  <repository>
+        <id>dev</id>
+        <name>dev</name>
+        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
+      </repository>
+      <snapshotRepository>
+        <id>dev</id>
+        <name>dev</name>
+        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
+      </snapshotRepository>
+    </distributionManagement>
+</project>

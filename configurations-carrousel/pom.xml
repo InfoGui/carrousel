@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.edf.felix</groupId>
+	<artifactId>configurations-carrousel</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>configurations-carrousel</name>
+	<packaging>jar</packaging>
+	<description>Configuration du carrousel</description>
+	
+    <repositories>
+      <repository>
+        <id>dev</id>
+        <name>dev</name>
+        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
+      </repository>
+    </repositories>
+	
+	<distributionManagement>
+      <repository>
+        <id>dev</id>
+        <name>dev</name>
+        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
+      </repository>
+	  <snapshotRepository>
+        <id>dev</id>
+        <name>dev</name>
+        <url>http://192.168.14.183:8090/nexus/content/repositories/dev/</url>
+      </snapshotRepository>
+    </distributionManagement>
+	
+	<build>
+		<plugins>
+		  <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-resources-plugin</artifactId>
+			<version>2.6</version>
+			<configuration>
+			  <delimiters>
+				<delimiter>@</delimiter>
+			  </delimiters>
+			  <useDefaultDelimiters>false</useDefaultDelimiters>
+			</configuration>
+		  </plugin>
+		</plugins>
+		<resources>
+		  <resource>
+			<directory>src/main/resources</directory>
+			<filtering>true</filtering>
+		  </resource>
+		</resources>
+	</build>
+</project>
