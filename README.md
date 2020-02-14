@@ -6,6 +6,8 @@ Application permettant la diffusion d'images sur des TV, écran.
 
 Le but étant de partager des documents sous forme d'image (rapports de PIC, DR, PERF, invitations aux communautés, photo journées respi, ..... tout ce que vous voulez ;)
 
+L'application est actuellement déployée ici : http://192.168.14.190:8082/
+
 ## Technologies
 
 - Java 8
