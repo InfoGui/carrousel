@@ -5,8 +5,7 @@ spring:
   thymeleaf:
     cache: false
     enabled: true
-    prefix:file: /templates/
-    suffix: .html
   application:
-    cheminImages: /root/carrousel/images
-    dependancesIhm: /root/carrousel/dependancesIhm
+    images: /root/carrousel/images
+    dependances: /root/carrousel/ihm/static
+    templates: /root/carrousel/ihm/static

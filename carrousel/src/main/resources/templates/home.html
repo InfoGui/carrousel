@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<title>Le vieux carrousel de FELIX</title>
+<title>Le carrousel de FELIX</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" th:href="@{/dependances/custom/img/fitnesse.ico}" />
@@ -15,30 +15,36 @@
 	th:href="@{/dependances/custom/css/main.css}" />
 </head>
 <body>
-	<div id="demo" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ul class="carousel-indicators">
-			<li th:each="fichier,index : ${fichiers}" data-target="#demo"
-				th:data-slide-to="${index.index}"
-				th:classappend="${index.index == 0} ? 'active' : ''"></li>
-		</ul>
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-sm-12">
+				<div id="demo" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ul class="carousel-indicators">
+						<li th:each="fichier,index : ${fichiers}" data-target="#demo"
+							th:data-slide-to="${index.index}"
+							th:classappend="${index.index == 0} ? 'active' : ''"></li>
+					</ul>
 
-		<!-- The slideshow -->
-		<div class="carousel-inner">
-			<div th:each="fichier,index : ${fichiers}" class="carousel-item"
-				th:classappend="${index.index == 0} ? 'active' : ''">
-				<img th:src="@{${'/images/'+fichier.name}}" th:alt="${fichier.name}" />
+					<!-- The slideshow -->
+					<div class="carousel-inner justify-content-md-center">
+						<div th:each="fichier,index : ${fichiers}" class="carousel-item"
+							th:classappend="${index.index == 0} ? 'active' : ''">
+							<img th:src="@{${'/images/'+fichier.name}}"
+								th:alt="${fichier.name}" class="d-block w-100"/>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a> <a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
 			</div>
 		</div>
-
-		<!-- Left and right controls -->
-		<a class="carousel-control-prev" href="#demo" data-slide="prev"> <span
-			class="carousel-control-prev-icon"></span>
-		</a> <a class="carousel-control-next" href="#demo" data-slide="next">
-			<span class="carousel-control-next-icon"></span>
-		</a>
 	</div>
-
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script th:src="@{/dependances/custom/js/jquery-3.3.1.slim.min.js}"
