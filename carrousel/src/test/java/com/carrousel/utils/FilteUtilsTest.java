@@ -1,6 +1,7 @@
 package com.carrousel.utils;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.File;
 import java.util.List;
@@ -38,7 +39,8 @@ public class FilteUtilsTest {
 		List<String> urls = fileUtils.getIframes(repertoire);
 
 		assertEquals(2, urls.size());
-		assertEquals("http://localhost:8081", urls.get(1));
+		assertTrue(urls.contains("http://localhost:8081"));
+		assertTrue(urls.contains("https://www.baeldung.com/java-file-extension"));
 	}
 
 }
