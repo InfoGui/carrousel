@@ -1,0 +1,9 @@
+server:
+  port: 8082
+
+spring:
+  thymeleaf:
+    cache: false
+    enabled: true
+  application:
+    images: src/test/resources/carrousel

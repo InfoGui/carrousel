@@ -4,3 +4,4 @@ build:
   stage: build
   script:
     - mvn install
+    - if [[ $(awk -F"," '{w+=$6;x+=$7;y+=$8;z+=$9}END{print int((x+z)/(w+x+y+z)*100)}' ./target/site/jacoco/jacoco.csv) -lt $MINIMAL_CODE_COVERAGE ]]; then echo "Couverture de code insuffisante :" $(awk -F"," '{w+=$6;x+=$7;y+=$8;z+=$9}END{print (x+z)/(w+x+y+z)*100}' ./target/site/jacoco/jacoco.csv) %" < $MINIMAL_CODE_COVERAGE %"; exit 1; fi

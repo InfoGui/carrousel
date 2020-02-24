@@ -33,7 +33,8 @@
 							<img th:src="@{${'/images/'+fichier.name}}"
 								th:alt="${fichier.name}" class="d-block w-100" />
 						</div>
-						<div th:each="iframe,index : ${iframes}" class="carousel-item">
+						<div th:each="iframe,index : ${iframes}" class="carousel-item" 
+						th:classappend="${fichiers.size() == 0 && index.index == 0} ? 'active' : ''">
 							<iframe th:src="${iframe}" class="d-block w-100" height=800></iframe>
 						</div>
 					</div>
