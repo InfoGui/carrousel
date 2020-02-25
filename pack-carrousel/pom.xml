@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-	<groupId>com.edf.felix</groupId>
+	<groupId>com.gjacquet</groupId>
 	<artifactId>pack-carrousel</artifactId>
 	<version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -53,13 +53,13 @@
     </build>
 	<dependencies>
 		<dependency>
-			<groupId>com.edf.felix</groupId>
+			<groupId>com.gjacquet</groupId>
 			<artifactId>configurations-carrousel</artifactId>
 			<version>${project.version}</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
-			<groupId>com.edf.felix</groupId>
+			<groupId>com.gjacquet</groupId>
 			<artifactId>carrousel</artifactId>
 			<version>${project.version}</version>
 			<type>jar</type>

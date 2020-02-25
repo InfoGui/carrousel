@@ -17,7 +17,7 @@
 	<dependencySets>
 		<dependencySet>
 		  <includes>
-			<include>com.edf.felix:carrousel:jar</include>
+			<include>com.gjacquet:carrousel:jar</include>
 		  </includes>
 		  <outputFileNameMapping>carrousel.jar</outputFileNameMapping>
 		  <outputDirectory>/</outputDirectory>
@@ -28,7 +28,7 @@
 		
 		 <dependencySet>
             <includes>
-                <include>com.edf.felix:configurations-carrousel:jar</include>
+                <include>com.gjacquet:configurations-carrousel:jar</include>
             </includes>
             <unpack>true</unpack>
             <unpackOptions>

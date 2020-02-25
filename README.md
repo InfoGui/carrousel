@@ -4,9 +4,7 @@
 
 Application permettant la diffusion d'images sur des TV, écran.
 
-Le but étant de partager des documents sous forme d'image (rapports de PIC, DR, PERF, invitations aux communautés, photo journées respi, ..... tout ce que vous voulez ;)
-
-L'application est actuellement déployée ici : http://192.168.14.190:8082/
+Le but étant de partager des documents sous forme d'images ou d'iframes (rapports de PIC, DR, PERF, invitations aux communautés, photo journées respi, ..... tout ce que vous voulez ;)
 
 ## Technologies
 
@@ -16,7 +14,7 @@ L'application est actuellement déployée ici : http://192.168.14.190:8082/
 
 ## Source
 
-https://si-devops-gitlab.edf.fr/flx-felix/carrousel
+https://gitlab.com/guillaume-jacquet/carrousel
 
 ## Lancement sur eclipse :
 
@@ -69,6 +67,16 @@ Pour arrêter l'application lancer :
 Il suffit d'ajouter des images dans le répertoire /root/carrousel/images (répertoire créé par le start)
 
 ![images_carrousel.PNG](images_readme/images_carrousel.PNG)
+
+
+
+## Ajouter des iframes
+
+IIl suffit d'ajouter des fichiers avec l'extention ".iframe" dans le répertoire /root/carrousel/images (répertoire créé par le start).
+
+Chaque fichier "iframe" ne contient qu'une seule URL.
+
+![](images_readme/iframes_carrousel.PNG)
 
 
 
