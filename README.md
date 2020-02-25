@@ -35,7 +35,7 @@ Cela génère un zip dans pack-carrousel/target
 
 ## Déploiement
 
-Prendre tout le contenu du zip et le transferer sur la machine linux 192.168.14.190 dans /root/carrousel
+Prendre tout le contenu du zip et le transferer sur la machine.
 
 lancer la commande
 
