@@ -1,4 +1,4 @@
-# Le carrousel de FELIX
+# Le carrousel
 
 ## Présentation
 
@@ -16,7 +16,7 @@ Le but étant de partager des documents sous forme d'images ou d'iframes (rappor
 
 Gitlab : https://gitlab.com/guillaume-jacquet/carrousel (avec pipeline CI)
 
-Github : https://github.com/InfoGui/carrousel
+Github : https://github.com/guillaume-jacquet/carrousel
 
 ## Lancement sur eclipse :
 
@@ -43,13 +43,7 @@ lancer la commande
 [root@LILVMAPACHE carrousel]# chmod +x start_carrousel.sh
 ```
 
-Ouvrir depuis winscp avec notepad++ les fichiers start, status et stop enlever une ligne vide et sauvegarder.
-
-C'est louche mais je pense qu'il y à un problème de conversion CRLR entre windows et linux.
-
-La commande dos2unix aurait résolue le pb mais pas dispo sur cette machine linux.
-
-A creuser si vous voulez ;)
+La commande dos2unix est peut-être jouer sur les fichiers sh
 
 Pour démarrer l'application lancer :
 
