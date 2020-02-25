@@ -98,11 +98,9 @@ Vous pouvez modifier le port de l'application ou le chemin des images, ressource
 
 ## Pour aller plus loin
 
-Externaliser le répertoire templates qui contient le fichier home.html afin de pouvoir le modifier à chaud sans devoir builder et redeployer l'application.
-
-J'ai essayer mais ca ne fonctionne pas.
-
-Vous pouvez creuser le sujets si cela vous interesse
+- Externaliser le répertoire templates qui contient le fichier home.html afin de pouvoir le modifier à chaud sans devoir builder et redeployer l'application.
+- Dockeriser l'application
+- Kubernetes ?
 
 
 
