@@ -14,7 +14,9 @@ Le but étant de partager des documents sous forme d'images ou d'iframes (rappor
 
 ## Source
 
-https://gitlab.com/guillaume-jacquet/carrousel
+Gitlab : https://gitlab.com/guillaume-jacquet/carrousel (avec pipeline CI)
+
+Github : https://github.com/InfoGui/carrousel
 
 ## Lancement sur eclipse :
 
