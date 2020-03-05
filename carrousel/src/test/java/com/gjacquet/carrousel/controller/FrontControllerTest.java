@@ -1,4 +1,4 @@
-package com.carrousel.controller;
+package com.gjacquet.carrousel.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -23,7 +23,7 @@ class FrontControllerTest {
 	private TestRestTemplate restTemplate;
 
 	@Test
-	public void getHello() throws Exception {
+	public void callIndex() throws Exception {
 		ResponseEntity<String> response = restTemplate
 				.getForEntity(new URL("http://localhost:" + port + "/").toString(), String.class);
 		assertEquals(HttpStatus.OK, response.getStatusCode());

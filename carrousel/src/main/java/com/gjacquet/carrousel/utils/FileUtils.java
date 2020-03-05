@@ -1,4 +1,4 @@
-package com.carrousel.utils;
+package com.gjacquet.carrousel.utils;
 
 import java.io.File;
 

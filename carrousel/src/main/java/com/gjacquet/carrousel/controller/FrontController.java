@@ -1,4 +1,4 @@
-package com.carrousel.controller;
+package com.gjacquet.carrousel.controller;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -9,8 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.carrousel.properties.ApplicationProperties;
-import com.carrousel.utils.FileUtils;
+import com.gjacquet.carrousel.properties.ApplicationProperties;
+import com.gjacquet.carrousel.utils.FileUtils;
 
 @Controller
 public class FrontController {

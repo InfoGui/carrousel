@@ -7,5 +7,5 @@ spring:
     enabled: true
   application:
     images: C:\Users\gjacquet\Pictures\carrousel
-    dependances: C:\Users\gjacquet\Dev\workspace-sts-3.9.11.RELEASE\carrousel\pack-carrousel\src\main\resources\ihm\static
-    templates: 
+    dependances: C:\Users\gjacquet\Dev\projets\carrousel\pack-carrousel\src\main\resources\ihm\static
+    templates: C:\Users\gjacquet\Dev\projets\carrousel\pack-carrousel\src\main\resources\ihm\templates

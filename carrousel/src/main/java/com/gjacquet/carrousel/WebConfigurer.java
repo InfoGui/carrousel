@@ -1,4 +1,4 @@
-package com.carrousel;
+package com.gjacquet.carrousel;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +13,7 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
-import com.carrousel.properties.ApplicationProperties;
+import com.gjacquet.carrousel.properties.ApplicationProperties;
 
 @Configuration
 @EnableWebMvc

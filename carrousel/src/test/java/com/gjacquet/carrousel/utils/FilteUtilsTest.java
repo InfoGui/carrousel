@@ -1,4 +1,4 @@
-package com.carrousel.utils;
+package com.gjacquet.carrousel.utils;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -12,7 +12,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.carrousel.properties.ApplicationProperties;
+import com.gjacquet.carrousel.properties.ApplicationProperties;
+import com.gjacquet.carrousel.utils.FileUtils;
 
 @SpringBootTest
 public class FilteUtilsTest {
