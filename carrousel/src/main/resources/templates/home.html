@@ -30,7 +30,7 @@
 					<div class="carousel-inner justify-content-md-center">
 						<div th:each="fichier,index : ${fichiers}" class="carousel-item"
 							th:classappend="${index.index == 0} ? 'active' : ''">
-							<img th:src="@{${'/images/'+fichier.name}}"
+							<img th:src="@{${'/images/'+repertoire+'/'+fichier.name}}"
 								th:alt="${fichier.name}" class="d-block w-100" />
 						</div>
 						<div th:each="iframe,index : ${iframes}" class="carousel-item" 

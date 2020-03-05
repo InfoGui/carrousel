@@ -6,6 +6,6 @@ spring:
     cache: false
     enabled: true
   application:
-    images: C:\Users\gjacquet\Pictures\carrousel
-    dependances: C:\Users\gjacquet\Dev\projets\carrousel\pack-carrousel\src\main\resources\ihm\static
-    templates: C:\Users\gjacquet\Dev\projets\carrousel\pack-carrousel\src\main\resources\ihm\templates
+    images: C:\Users\gjacquet\Pictures\carrousel\
+    dependances: C:\Users\gjacquet\Dev\projets\carrousel\pack-carrousel\src\main\resources\ihm\static\
+    templates: C:\Users\gjacquet\Dev\projets\carrousel\pack-carrousel\src\main\resources\ihm\templates\

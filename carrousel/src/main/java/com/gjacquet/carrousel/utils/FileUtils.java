@@ -56,13 +56,12 @@ public class FileUtils {
 	public boolean isImage(File fichier) {
 		String mimeType = new MimetypesFileTypeMap().getContentType(fichier);
 		String type = mimeType.split("/")[0];
-		return type.equals("image");
+		return fichier.exists() && type.equals("image");
 	}
 
 	public boolean isIframe(File fichier) {
 		String name = fichier.getName();
 		String[] parts = name.split("\\.");
-
-		return parts.length > 1 && parts[1].equals("iframe");
+		return fichier.exists() && parts.length > 1 && parts[1].equals("iframe");
 	}
 }
