@@ -21,10 +21,11 @@ public class FrontController {
 
 	FileUtils fileUtils = new FileUtils();
 
-	@GetMapping("/")
-	public String homePage(final Model model) {
+	@GetMapping(value = { "/", "/{repertoire}" })
+	public String homePage(final Model model, @PathVariable(required = false) final String repertoire) {
+		String dossier = repertoire == null ? "" : repertoire;
+		String chemin = applicationProperties.getImages() + dossier;
 
-		String chemin = applicationProperties.getImages();
 		List<File> fichiers = new ArrayList<>();
 		List<String> iframes = new ArrayList<>();
 		File source = new File(chemin);
@@ -33,26 +34,7 @@ public class FrontController {
 			iframes = fileUtils.getIframes(source);
 		}
 
-		model.addAttribute("repertoire", "");
-		model.addAttribute("fichiers", fichiers);
-		model.addAttribute("iframes", iframes);
-
-		return "home.html";
-	}
-
-	@GetMapping("/{repertoire}")
-	public String repertoirePage(final Model model, @PathVariable final String repertoire) {
-
-		String chemin = applicationProperties.getImages() + repertoire;
-		List<File> fichiers = new ArrayList<>();
-		List<String> iframes = new ArrayList<>();
-		File source = new File(chemin);
-		if (source.isDirectory()) {
-			fichiers = fileUtils.getImages(source);
-			iframes = fileUtils.getIframes(source);
-		}
-
-		model.addAttribute("repertoire", repertoire);
+		model.addAttribute("dossier", dossier);
 		model.addAttribute("fichiers", fichiers);
 		model.addAttribute("iframes", iframes);
 
